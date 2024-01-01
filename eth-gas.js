@@ -1,7 +1,7 @@
 const request = require('request');
 const nodemailer = require('nodemailer');
 
-// Etherscan API endpoint for getting the latest pending transactions of an Ethereum address
+
 const ETHERSCAN_API_URL = 'https://api.etherscan.io/api';
 
 // Function to check the latest Ethereum pending transactions and send an email if a transaction costs less than a threshold gas price
