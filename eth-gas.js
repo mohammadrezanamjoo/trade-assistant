@@ -17,7 +17,7 @@ function checkEthereumPendingTransactionsAndSendNotification(walletAddress, thre
   const queryString = Object.keys(params).map(key => key + '=' + params[key]).join('&');
   const apiUrl = ETHERSCAN_API_URL + '?' + queryString;
 
-  // Check the latest Ethereum pending transactions using the Etherscan API
+
   request(apiUrl, function(error, response, body) {
     if (!error && response.statusCode == 200) {
       const txData = JSON.parse(body).result;
