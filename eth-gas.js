@@ -61,5 +61,4 @@ function checkEthereumPendingTransactionsAndSendNotification(walletAddress, thre
   });
 }
 
-// Call the function to start checking Ethereum pending transactions and sending email notifications
 checkEthereumPendingTransactionsAndSendNotification('ETH_WALLET_ADDRESS', 0.000);
